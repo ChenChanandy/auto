@@ -26,11 +26,14 @@ public class ChromeTest {
 		//WebElement element = driver.findElement(By.name("wd"));
 		
 		//3：tagName，标签名
-		List<WebElement> elements = driver.findElements(By.tagName("input"));
+		//List<WebElement> elements = driver.findElements(By.tagName("input"));
 		//System.out.println(elements.size());
 		
 		//百度的输入框是第八个
-		WebElement element = elements.get(7);
+		//WebElement element = elements.get(7);
+		
+		//4.className
+		WebElement element = driver.findElement(By.className("s_ipt"));
 		
 		//往这个元素输入内容
 		element.sendKeys("充钱才能够变强");
