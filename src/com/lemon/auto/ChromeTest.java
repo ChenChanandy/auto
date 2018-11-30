@@ -33,10 +33,25 @@ public class ChromeTest {
 		//WebElement element = elements.get(7);
 		
 		//4.className
-		WebElement element = driver.findElement(By.className("s_ipt"));
+		//WebElement element = driver.findElement(By.className("s_ipt"));
+		
+		//5.linkText:完整的文本内容
+		//WebElement element = driver.findElement(By.linkText("新闻"));
+		
+		//6.partialLinkText:部分文本
+		//WebElement element = driver.findElement(By.partialLinkText("闻"));
+						
+		//7.cssSelector:样式选择器
+		//WebElement element = driver.findElement(By.cssSelector("input.s_ipt"));
+		WebElement element = driver.findElement(By.cssSelector("input[autocomplete='off']"));
+		//8.xpath
+		//WebElement element = driver.findElement(By.xpath(""));
 		
 		//往这个元素输入内容
 		element.sendKeys("充钱才能够变强");
+		
+		//点击
+		//element.click();
 	}
 
 }
